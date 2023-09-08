@@ -1,0 +1,415 @@
+{
+    "vtable": [
+        {
+            "address": "0x2A53DE8",
+            "functions": [
+                "??1ChestScreenController@@UEAA@XZ",
+                "?_registerCoalesceOrder@ChestScreenController@@UEAAXXZ",
+                "?_registerAutoPlaceOrder@ChestScreenController@@UEAAXXZ"
+            ],
+            "name": "ChestScreenController"
+        },
+        {
+            "address": "0x2AB3770",
+            "functions": [
+                "??1ScreenController@@UEAA@XZ",
+                "?tick@ScreenController@@UEAA?AW4DirtyFlag@ui@@XZ",
+                "?handleEvent@ScreenController@@UEAA?AW4ViewRequest@ui@@AEAVScreenEvent@@@Z",
+                "?onOpen@ScreenController@@UEAAXXZ",
+                "?onTerminate@ScreenController@@UEAAXXZ",
+                "?onInit@ScreenController@@UEAAXXZ",
+                "?canExit@ScreenController@@UEAA_NXZ",
+                "?tryExit@ScreenController@@UEAAHXZ",
+                "?areControllerTabsEnabled@ScreenController@@UEAA_NXZ",
+                "?onCreation@ScreenController@@UEAAXXZ",
+                "?logCreationTime@ScreenController@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@NNE@Z",
+                "?onLeave@ScreenController@@UEAAXXZ",
+                "?leaveScreen@ScreenController@@UEAAXXZ",
+                "?handleGameEventNotification@ScreenController@@UEAAXW4GameEventNotification@ui@@@Z",
+                "?bind@ScreenController@@UEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IH0I0AEAVUIPropertyBag@@@Z",
+                "?bind@ScreenController@@UEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I0AEAVUIPropertyBag@@@Z",
+                "?handleLicenceChanged@ScreenController@@UEAAXXZ",
+                "?onDictationEvent@ScreenController@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                "?setAssociatedBlockPos@ScreenController@@UEAAXAEBVBlockPos@@@Z",
+                "?setAssociatedEntityUniqueID@ScreenController@@UEAAXUActorUniqueID@@@Z",
+                "?setSuspendInput@ScreenController@@UEAAX_N@Z",
+                "?getCallbackInterval@ScreenController@@UEAAMXZ",
+                "?setViewCommand@ScreenController@@UEAAXAEAVScreenViewCommand@@@Z",
+                "?onRender@ScreenController@@UEAAXXZ",
+                "?addStaticScreenVars@ScreenController@@UEAAXAEAVValue@Json@@@Z",
+                "?getAdditionalScreenInfo@ScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?getTelemetryOverride@ScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?addEventProperties@ScreenController@@UEAAXAEAV?$unordered_map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$hash@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@U?$equal_to@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@@Z",
+                "?getSceneType@ScreenController@@UEAA?AW4SceneType@ui@@XZ",
+                "?getScreenVersion@ScreenController@@UEAAHXZ",
+                "?screenHandlesGamepadMenuButton@ScreenController@@UEAA_NXZ",
+                "?getProxy@ScreenController@@UEAAAEAVScreenControlleProxy@@XZ",
+                "?onEntered@ScreenController@@UEAAXXZ",
+                "?getNameId@ScreenController@@UEAA_KAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                "?_doesScreenHaveExitBehavior@ScreenController@@UEAA_NXZ"
+            ],
+            "name": "ScreenController"
+        },
+        {
+            "address": "0x2A76410",
+            "parent": "ScreenController",
+            "functions": [
+                "??1MinecraftScreenController@@UEAA@XZ",
+                "?tick@MinecraftScreenController@@UEAA?AW4DirtyFlag@ui@@XZ",
+                "?onOpen@MinecraftScreenController@@UEAAXXZ",
+                "?tryExit@MinecraftScreenController@@UEAAHXZ",
+                "?leaveScreen@MinecraftScreenController@@UEAAXXZ",
+                "?bind@MinecraftScreenController@@UEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IH0I0AEAVUIPropertyBag@@@Z",
+                "?bind@MinecraftScreenController@@UEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I0AEAVUIPropertyBag@@@Z",
+                "?onDictationEvent@MinecraftScreenController@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                "?setSuspendInput@MinecraftScreenController@@UEAAX_N@Z",
+                "?_isStillValid@MinecraftScreenController@@UEAA_NXZ",
+                "?_getGamepadHelperVisible@MinecraftScreenController@@UEAA_NXZ",
+                "?_getMixedHelperVisible@MinecraftScreenController@@UEAA_NXZ",
+                "?_getKeyboardHelperVisible@MinecraftScreenController@@UEAA_NXZ",
+                "?_getButtonADescription@MinecraftScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?_getButtonBDescription@MinecraftScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?_getButtonXDescription@MinecraftScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?_getButtonYDescription@MinecraftScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?_getButtonKeyboardDescription@MinecraftScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ"
+            ],
+            "name": "MinecraftScreenController"
+        },
+        {
+            "address": "0x2A546E0",
+            "parent": "MinecraftScreenController",
+            "functions": [
+                "??1ClientInstanceScreenController@@UEAA@XZ"
+            ],
+            "name": "ClientInstanceScreenController"
+        },
+        {
+            "address": "0x2A59D40",
+            "parent": "ClientInstanceScreenController",
+            "functions": [
+                "??1ContainerScreenController@@UEAA@XZ",
+                "?tick@ContainerScreenController@@UEAA?AW4DirtyFlag@ui@@XZ",
+                "?onOpen@ContainerScreenController@@UEAAXXZ",
+                "?onLeave@ContainerScreenController@@UEAAXXZ",
+                "?handleGameEventNotification@ContainerScreenController@@UEAAXW4GameEventNotification@ui@@@Z",
+                "?setAssociatedBlockPos@ContainerScreenController@@UEAAXAEBVBlockPos@@@Z",
+                "?setAssociatedEntityUniqueID@ContainerScreenController@@UEAAXUActorUniqueID@@@Z",
+                "?setViewCommand@ContainerScreenController@@UEAAXAEAVScreenViewCommand@@@Z",
+                "?addStaticScreenVars@ContainerScreenController@@UEAAXAEAVValue@Json@@@Z",
+                "?_isStillValid@ContainerScreenController@@UEAA_NXZ",
+                "?_getButtonADescription@ContainerScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?_getButtonXDescription@ContainerScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?_getButtonYDescription@ContainerScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?_handlePlaceAll@ContainerScreenController@@UEAAAEAVContainerItemStack@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?_handlePlaceOne@ContainerScreenController@@UEAAAEAVContainerItemStack@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?_handleSelectSlot@ContainerScreenController@@UEAAAEAVContainerItemStack@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?_getSelectedSlotInfo@ContainerScreenController@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                "?_getItemStack@ContainerScreenController@@UEAAAEAVContainerItemStack@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?_getVisualItemStack@ContainerScreenController@@UEAAAEAVContainerItemStack@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?_onContainerSlotHovered@ContainerScreenController@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?_onContainerSlotSelected@ContainerScreenController@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?_onContainerSlotPressed@ContainerScreenController@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?_shouldSwap@ContainerScreenController@@UEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H0H@Z",
+                "?_getCollectionName@ContainerScreenController@@UEAAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVUIPropertyBag@@@Z",
+                "?_canSplit@ContainerScreenController@@UEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?_sendFlyingItem@ContainerScreenController@@UEAAXAEBVContainerItemStack@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H1H@Z",
+                "?_registerCoalesceOrder@ContainerScreenController@@UEAAXXZ",
+                "?_registerAutoPlaceOrder@ContainerScreenController@@UEAAXXZ"
+            ],
+            "name": "ContainerScreenController"
+        },
+        {
+            "address": "0x2B670F0",
+            "functions": [
+                "??1ContainerManagerModel@@UEAA@XZ",
+                "?getContainerId@ContainerManagerModel@@UEBA?AW4ContainerID@@XZ",
+                "?setContainerId@ContainerManagerModel@@UEAAXW4ContainerID@@@Z",
+                "?getContainerType@ContainerManagerModel@@UEBA?AW4ContainerType@@XZ",
+                "?setContainerType@ContainerManagerModel@@UEAAXW4ContainerType@@@Z",
+                "?getItems@ContainerManagerModel@@UEBA?AV?$vector@VContainerItemStack@@V?$allocator@VContainerItemStack@@@std@@@std@@XZ",
+                "?setSlot@ContainerManagerModel@@UEAAXHAEBVContainerItemStack@@_N@Z",
+                "?getSlot@ContainerManagerModel@@UEBAAEBVContainerItemStack@@H@Z",
+                "?setData@ContainerManagerModel@@UEAAXHH@Z",
+                "?broadcastChanges@ContainerManagerModel@@UEAAXXZ",
+                "?init@ContainerManagerModel@@UEAAXXZ",
+                "?isValid@ContainerManagerModel@@UEAA_NM@Z"
+            ],
+            "name": "ContainerManagerModel"
+        },
+        {
+            "address": "0x2B65AD0",
+            "functions": [
+                "??1ContainerManagerController@@UEAA@XZ",
+                "?getTakeableItemStack@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@@Z",
+                "?handleTakeAmount@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@H0@Z",
+                "?handleTakeAll@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@0@Z",
+                "?handlePlaceAll@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSelectedSlotInfo@@AEBVSlotData@@@Z",
+                "?handleTakeHalf@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@0@Z",
+                "?handlePlaceOne@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@0@Z",
+                "?handlePlaceAmount@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@H0@Z",
+                "?handleAutoPlace@ContainerManagerController@@UEAAHAEBVSlotData@@HAEBV?$vector@UAutoPlaceItem@@V?$allocator@UAutoPlaceItem@@@std@@@std@@AEAV?$vector@UAutoPlaceResult@@V?$allocator@UAutoPlaceResult@@@std@@@4@@Z",
+                "?handleAutoPlaceStack@ContainerManagerController@@UEAAHAEBVSlotData@@W4ItemTakeType@@AEBV?$vector@UAutoPlaceItem@@V?$allocator@UAutoPlaceItem@@@std@@@std@@AEAV?$vector@UAutoPlaceResult@@V?$allocator@UAutoPlaceResult@@@std@@@5@@Z",
+                "?handleSplitSingle@ContainerManagerController@@UEAAXAEBVSlotData@@0@Z",
+                "?handleSplitMultiple@ContainerManagerController@@UEAAXAEBVSelectedSlotInfo@@AEBVItemInstance@@AEBVSlotData@@@Z",
+                "?handleCoalesce@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z",
+                "?handleSwap@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@0@Z",
+                "?handleDrop@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@UItemTransferAmount@@@Z",
+                "?handleDestroy@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSelectedSlotInfo@@UItemTransferAmount@@@Z",
+                "?handleDestroy@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@UItemTransferAmount@@@Z",
+                "?handleConsume@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@UItemTransferAmount@@@Z",
+                "?handleAddToStack@ContainerManagerController@@UEAAAEAVContainerItemStack@@AEBVSlotData@@0W4ItemTakeType@@@Z",
+                "?closeContainers@ContainerManagerController@@UEAAXXZ",
+                "?getSplitItems@ContainerManagerController@@UEAAAEAVItemStack@@XZ",
+                "?isOutputSlot@ContainerManagerController@@UEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                "?_onItemTransferredFrom@ContainerManagerController@@UEAAXAEBVItemInstance@@AEBVSlotData@@@Z",
+                "?_onItemTransferredTo@ContainerManagerController@@UEAAXAEBVItemInstance@@AEBVSlotData@@@Z",
+                "?_onItemAcquired@ContainerManagerController@@UEAAXAEBVItemInstance@@AEBVSlotData@@@Z",
+                "?_onItemPlaced@ContainerManagerController@@UEAAXAEBVItemInstance@@AEBVSlotData@@@Z"
+            ],
+            "name": "ContainerManagerController"
+        },
+        {
+            "address": "0x2B67990",
+            "parent": "ContainerManagerModel",
+            "functions": [
+                "??1LevelContainerManagerModel@@UEAA@XZ",
+                "?getItems@LevelContainerManagerModel@@UEAA?AV?$vector@VContainerItemStack@@V?$allocator@VContainerItemStack@@@std@@@std@@XZ",
+                "?setSlot@LevelContainerManagerModel@@UEAAXHAEBVContainerItemStack@@_N@Z",
+                "?getSlot@LevelContainerManagerModel@@UEAA?BVContainerItemStack@@H@Z",
+                "?setData@LevelContainerManagerModel@@UEAAXHH@Z",
+                "?broadcastChanges@LevelContainerManagerModel@@UEAAXXZ",
+                "?init@LevelContainerManagerModel@@UEAAXXZ",
+                "?isValid@LevelContainerManagerModel@@UEAA_NM@Z"
+            ],
+            "name": "LevelContainerManagerModel"
+        },
+        {
+            "address": "0x2B66430",
+            "parent": "ContainerManagerController",
+            "functions": [
+                "??1LevelContainerManagerController@@UEAA@XZ",
+                "?isContainerValid@LevelContainerManagerController@@UEAA_NM@Z"
+            ],
+            "name": "LevelContainerManagerController"
+        },
+        {
+            "address": "0x2B67D10",
+            "functions": [
+                "?containerContentChanged@ContainerModel@@UEAAXH@Z",
+                "??1ContainerModel@@UEAA@XZ",
+                "?postInit@ContainerModel@@UEAAXXZ",
+                "?releaseResources@ContainerModel@@UEAAXXZ",
+                "?getContainerSize@ContainerModel@@UEBAHXZ",
+                "?getFilteredContainerSize@ContainerModel@@UEBAHXZ",
+                "?tick@ContainerModel@@UEAAXH@Z",
+                "?getItem@ContainerModel@@UEBAAEBVContainerItemStack@@H@Z",
+                "?getItems@ContainerModel@@UEBAAEBV?$vector@VContainerItemStack@@V?$allocator@VContainerItemStack@@@std@@@std@@XZ",
+                "?getItemInstances@ContainerModel@@UEAAAEBV?$vector@VItemInstance@@V?$allocator@VItemInstance@@@std@@@std@@XZ",
+                "?setItem@ContainerModel@@UEAAXHAEBVContainerItemStack@@@Z",
+                "?isValid@ContainerModel@@UEAA_NXZ",
+                "?isItemFiltered@ContainerModel@@UEBA_NAEBVContainerItemStack@@@Z",
+                "?isExpanableItemFiltered@ContainerModel@@UEBA_NH@Z",
+                "?getItemExpandStatus@ContainerModel@@UEBA?AW4ContainerExpandStatus@@H@Z",
+                "?getItemGroupName@ContainerModel@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+                "?switchItemExpando@ContainerModel@@UEAAXH@Z",
+                "?_getContainerOffset@ContainerModel@@UEBAHXZ",
+                "?_onItemChanged@ContainerModel@@UEAAXHAEBVItemStack@@0@Z"
+            ],
+            "name": "ContainerModel"
+        },
+        {
+            "address": "0x2B682E0",
+            "parent": "ContainerModel",
+            "functions": [
+                "?containerContentChanged@PlayerUIContainerModelBase@@UEAAXH@Z",
+                "??1PlayerUIContainerModelBase@@UEAA@XZ",
+                "?postInit@PlayerUIContainerModelBase@@UEAAXXZ",
+                "?releaseResources@PlayerUIContainerModelBase@@UEAAXXZ",
+                "?isValid@PlayerUIContainerModelBase@@UEAA_NXZ",
+                "?_getContainerOffset@PlayerUIContainerModelBase@@UEBAHXZ",
+                "?_onItemChanged@PlayerUIContainerModelBase@@UEAAXHAEBVItemStack@@0@Z",
+                "?_getContainer@PlayerUIContainerModelBase@@UEBAAEAVContainer@@XZ"
+            ],
+            "name": "PlayerUIContainerModelBase"
+        },
+        {
+            "address": "0x2B68238",
+            "parent": "PlayerUIContainerModelBase",
+            "functions": [
+                "??1PlayerUIContainerModel@@UEAA@XZ",
+                "?_getContainerOffset@PlayerUIContainerModel@@UEBAHXZ"
+            ],
+            "name": "PlayerUIContainerModel"
+        },
+        {
+            "address": "0x2B68048",
+            "parent": "ContainerModel",
+            "functions": [
+                "?containerContentChanged@InventoryContainerModel@@UEAAXH@Z",
+                "??1InventoryContainerModel@@UEAA@XZ",
+                "?postInit@InventoryContainerModel@@UEAAXXZ",
+                "?releaseResources@InventoryContainerModel@@UEAAXXZ",
+                "?isValid@InventoryContainerModel@@UEAA_NXZ",
+                "?_getContainerOffset@InventoryContainerModel@@UEBAHXZ",
+                "?_onItemChanged@InventoryContainerModel@@UEAAXHAEBVItemStack@@0@Z",
+                "?_getContainer@InventoryContainerModel@@UEBAAEAVContainer@@XZ"
+            ],
+            "name": "InventoryContainerModel"
+        },
+        {
+            "address": "0x2B64AB0",
+            "functions": [
+                "??1ContainerController@@UEAA@XZ",
+                "?isItemAllowed@ContainerController@@UEBA_NAEBVItemInstance@@@Z",
+                "?isItemAllowedAtSlot@ContainerController@@UEBA_NAEBVContainerItemStack@@H@Z",
+                "?isItemFiltered@ContainerController@@UEBA_NAEBVRecipes@@AEBVContainerItemStack@@@Z",
+                "?getBackgroundStyle@ContainerController@@UEBAHH@Z",
+                "?_canSet@ContainerController@@UEBA?AW4ItemSetType@@HAEBVContainerItemStack@@UItemTransferAmount@@@Z",
+                "?_getAvailableSetCount@ContainerController@@UEBAHHAEBVContainerItemStack@@@Z",
+                "?_getAvailableAddCount@ContainerController@@UEBAHH@Z",
+                "?_canRemove@ContainerController@@UEBA_NHH@Z",
+                "?_onItemChanged@ContainerController@@UEAAXH@Z"
+            ],
+            "name": "ContainerController"
+        },
+        {
+            "address": "0x2A4F678",
+            "parent": "ContainerScreenController",
+            "functions": [
+                "??1BlockContainerScreenController@@UEAA@XZ",
+                "?_isStillValid@BlockContainerScreenController@@UEAA_NXZ",
+                "?_registerCoalesceOrder@BlockContainerScreenController@@UEAAXXZ",
+                "?_registerAutoPlaceOrder@BlockContainerScreenController@@UEAAXXZ"
+            ],
+            "name": "BlockContainerScreenController"
+        }
+    ],
+    "functions": [
+        {
+            "name": "??0ClientInstanceScreenModel@@QEAA@AEAVIMinecraftGame@@AEAVIClientInstance@@AEAVSceneStack@@AEAVSceneFactory@@@Z",
+            "address": {
+                "default": "0x06529C0"
+            }
+        },
+        {
+            "name": "??0FurnaceScreenController@@QEAA@V?$shared_ptr@VClientInstanceScreenModel@@@std@@AEBVBlockPos@@W4InteractionModel@@AEBVHashString@Util@@@Z",
+            "address": {
+                "default": "0x03701B0"
+            }
+        },
+        {
+            "name": "?_createScreen@SceneFactory@@QEAA?AV?$shared_ptr@VAbstractScene@@@std@@V?$shared_ptr@VBaseScreen@@@3@@Z",
+            "address": {
+                "default": "0x06EB1F0"
+            }
+        },
+        {
+            "name": "?createUIScene@SceneFactory@@QEAA?AV?$shared_ptr@VUIScene@@@std@@AEAVIMinecraftGame@@AEAVIClientInstance@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@V?$shared_ptr@VScreenController@@@3@@Z",
+            "address": {
+                "default": "0x06D1EF0"
+            }
+        },
+        {
+            "name": "?pushScreen@SceneStack@@QEAAXV?$shared_ptr@VAbstractScene@@@std@@_N@Z",
+            "address": {
+                "default": "0x070D700"
+            }
+        },
+        {
+            "name": "?_setContainerManager@ServerPlayer@@QEAAXV?$shared_ptr@VIContainerManager@@@std@@@Z",
+            "address": {
+                "default": "0x11C8010"
+            }
+        },
+        {
+            "name": "??0FurnaceContainerManagerModel@@QEAA@AEBVHashString@Util@@W4ContainerType@@W4BlockActorType@@W4ContainerID@@AEAVPlayer@@AEBVBlockPos@@@Z",
+            "address": {
+                "default": "0x14D3690"
+            }
+        },
+        {
+            "name": "?bindFloat@ScreenController@@QEAAXAEBVStringHash@@AEBV?$function@$$A6AMXZ@std@@AEBV?$function@$$A6A_NXZ@4@@Z",
+            "address": {
+                "default": "0x0716C20"
+            }
+        },
+        {
+            "name": "?bindString@ScreenController@@QEAAXAEBVStringHash@@AEBV?$function@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ@std@@AEBV?$function@$$A6A_NXZ@4@@Z",
+            "address": {
+                "default": "0x07165E0"
+            }
+        },
+        {
+            "name": "?createChestScreen@SceneFactory@@QEAA?AV?$shared_ptr@VUIScene@@@std@@AEAV1@AEAVIMinecraftGame@@AEAVIClientInstance@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@AEBVBlockPos@@AEAW4InteractionModel@@$$QEAW4BlockActorType@@@Z",
+            "address": {
+                "default": "0x06EFBF0"
+            }
+        },
+        {
+            "name": "??0ChestScreenController@@QEAA@V?$shared_ptr@VClientInstanceScreenModel@@@std@@AEBVBlockPos@@W4InteractionModel@@W4BlockActorType@@@Z",
+            "address": {
+                "default": "0x02C7370"
+            }
+        },
+        {
+            "name": "??0ContainerScreenController@@QEAA@V?$shared_ptr@VClientInstanceScreenModel@@@std@@W4InteractionModel@@@Z",
+            "address": {
+                "default": "0x02EEE70"
+            }
+        },
+        {
+            "name": "??0ClientInstanceScreenController@@QEAA@V?$shared_ptr@VClientInstanceScreenModel@@@std@@@Z",
+            "address": {
+                "default": "0x02CBF30"
+            }
+        },
+        {
+            "name": "??0ContainerManagerModel@@QEAA@W4ContainerID@@AEAVPlayer@@@Z",
+            "address": {
+                "default": "0x14CE340"
+            }
+        },
+        {
+            "name": "?setContainerManager@Player@@QEAAXV?$shared_ptr@VIContainerManager@@@std@@@Z",
+            "address": "0x145D010"
+        },
+        {
+            "name": "?registerContainerCallbacks@ContainerManagerController@@QEAAXV?$weak_ptr@VContainerManagerModel@@@std@@@Z",
+            "address": "0x0105BF0"
+        },
+        {
+            "name": "??0ContainerManagerController@@QEAA@V?$weak_ptr@VContainerManagerModel@@@std@@@Z",
+            "address": "0x1493D00"
+        },
+        {
+            "name": "??0ContainerModel@@QEAA@W4ContainerEnumName@@HW4ContainerCategory@@@Z",
+            "address": "0x14DADE0"
+        },
+        {
+            "name": "??0LevelContainerModel@@QEAA@W4ContainerEnumName@@HAEAVPlayer@@W4BlockActorType@@AEBVBlockPos@@W4ContainerCategory@@@Z",
+            "address": "0x14DF280"
+        },
+        {
+            "name": "?createController@ContainerFactory@@SA?AV?$shared_ptr@VContainerController@@@std@@V?$weak_ptr@VContainerModel@@@3@@Z",
+            "address": "0x147BD10"
+        },
+        {
+            "name": "??0BlockContainerScreenController@@QEAA@V?$shared_ptr@VClientInstanceScreenModel@@@std@@AEBVBlockPos@@W4InteractionModel@@@Z",
+            "address": "0x02A5880"
+        },
+        {
+            "name": "??0LevelContainerManagerController@@QEAA@V?$weak_ptr@VLevelContainerManagerModel@@@std@@@Z",
+            "address": "0x14B6590"
+        },
+        {
+            "name": "?_setPlayerContainerManager@ContainerFactory@@SAXAEAVPlayer@@V?$shared_ptr@VIContainerManager@@@std@@@Z",
+            "address": "0x147D0F0"
+        }
+    ],
+    "includes": [
+       
+    ],
+    "variables": {
+        
+    }
+}
