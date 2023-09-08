@@ -57,18 +57,19 @@ void D3DHook::InitializeHooks()
 {
     IDXGISwapChain* pSwapChain = nullptr;
     if (CreateDummySwapChain(&pSwapChain)) {
-        Zenova_Info("Vtable replacement in IDXGISwapChain::Present is {}", Zenova::Platform::CreateHook((*reinterpret_cast<void***>(pSwapChain))[8], &IDXGISwapChain_Present_Hook, &IDXGISwapChain_Present_Trampoline));
+        Zenova_Info("Hook in IDXGISwapChain::Present is {}", Zenova::Platform::CreateHook((*reinterpret_cast<void***>(pSwapChain))[8], &IDXGISwapChain_Present_Hook, &IDXGISwapChain_Present_Trampoline));
         Zenova_Info("IDXGISwapChain::Present hook address: 0x{:x}", (intptr_t)&IDXGISwapChain_Present_Hook);
         Zenova_Info("IDXGISwapChain::Present trampoline address: 0x{:x}", (intptr_t)IDXGISwapChain_Present_Trampoline);
+
+        Zenova_Info("Hook in IDXGISwapChain::ResizeBuffers is {}", Zenova::Platform::CreateHook((*reinterpret_cast<void***>(pSwapChain))[13], &IDXGISwapChain_ResizeBuffers_Hook, &IDXGISwapChain_ResizeBuffers_Trampoline));
+        Zenova_Info("IDXGISwapChain::ResizeBuffers hook address: 0x{:x}", (intptr_t)&IDXGISwapChain_ResizeBuffers_Hook);
+        Zenova_Info("IDXGISwapChain::ResizeBuffers trampoline address: 0x{:x}", (intptr_t)IDXGISwapChain_ResizeBuffers_Trampoline);
     }
     else {
         Zenova_Info("Failed to hook IDXGISwapChain::Present");
+        Zenova_Info("Failed to hook IDXGISwapChain::ResizeBuffers");
     }
 }
-
-#define RetOriginalCall \
-if (IDXGISwapChain_Present_Trampoline) \
-return IDXGISwapChain_Present_Trampoline(SwapChain, SyncInterval, PresentFlags);
 
 FPTR_IDXGISwapChain_Present D3DHook::IDXGISwapChain_Present_Trampoline = nullptr;
 HRESULT __stdcall D3DHook::IDXGISwapChain_Present_Hook(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT PresentFlags)
@@ -76,12 +77,22 @@ HRESULT __stdcall D3DHook::IDXGISwapChain_Present_Hook(IDXGISwapChain* SwapChain
     ImGuiEx::InitializeImGui(SwapChain);
     ImGuiEx::Render(SwapChain);
     
-    RetOriginalCall
+    if (IDXGISwapChain_Present_Trampoline)
+        return IDXGISwapChain_Present_Trampoline(SwapChain, SyncInterval, PresentFlags);
     else
     {
         Zenova_Info("Invalid IDXGISwapChain::Present trampoline.");
         return 0;
     }
+}
+
+PFN_IDXGISwapChain_ResizeBuffers D3DHook::IDXGISwapChain_ResizeBuffers_Trampoline = nullptr;
+HRESULT __stdcall D3DHook::IDXGISwapChain_ResizeBuffers_Hook(IDXGISwapChain* This, UINT BufferCount, UINT Width, UINT Height, DXGI_FORMAT NewFormat, UINT SwapChainFlags)
+{
+    ImGuiEx::ReleaseRenderTarget();
+    HRESULT hResult = IDXGISwapChain_ResizeBuffers_Trampoline(This, BufferCount, Width, Height, NewFormat, SwapChainFlags);
+    ImGuiEx::CreateRenderTarget(This);
+    return hResult;
 }
 
 

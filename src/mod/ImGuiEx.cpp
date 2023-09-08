@@ -38,12 +38,8 @@ void ImGuiEx::InitializeImGui(IDXGISwapChain* SwapChain)
 			ImGui_ImplWinRT_Init(CoreWindow);
 			ImGui_ImplDX11_Init(Device, DeviceContext);
 
-			ID3D11Texture2D* pBackBuffer;
-
-			SwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)&pBackBuffer);
-			if (pBackBuffer)
-				Device->CreateRenderTargetView(pBackBuffer, NULL, &RenderTargetView);
-			pBackBuffer->Release();
+			ReleaseRenderTarget();
+			CreateRenderTarget(SwapChain);
 
 			Initialized = true;
 		}
@@ -91,6 +87,22 @@ void ImGuiEx::Draw(IDXGISwapChain* SwapChain)
 	if (showWindow) {
 		ImGui::ShowDemoWindow(&showWindow);
 	}
+}
+
+void ImGuiEx::CreateRenderTarget(IDXGISwapChain* SwapChain)
+{
+	ID3D11Texture2D* pBackBuffer;
+
+	SwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)&pBackBuffer);
+	if (pBackBuffer)
+		Device->CreateRenderTargetView(pBackBuffer, NULL, &RenderTargetView);
+	pBackBuffer->Release();
+}
+
+void ImGuiEx::ReleaseRenderTarget()
+{
+	if (RenderTargetView)
+		RenderTargetView->Release();
 }
 
 LRESULT CALLBACK ImGuiEx::WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 

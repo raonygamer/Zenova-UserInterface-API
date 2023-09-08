@@ -31,6 +31,8 @@ struct ImGuiEx {
 	static bool GetDeviceAndContext(IDXGISwapChain* pSwapChain, ID3D11Device** outDevice, ID3D11DeviceContext** outDeviceContext);
 	static void Render(IDXGISwapChain* SwapChain);
 	static void Draw(IDXGISwapChain* SwapChain);
+    static void CreateRenderTarget(IDXGISwapChain* SwapChain);
+    static void ReleaseRenderTarget();
 	static LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
     static BOOL CALLBACK EnumChildProc(
